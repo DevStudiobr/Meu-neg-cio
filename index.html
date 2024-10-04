@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Negócios Santa Rita</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Negócios Santa Rita</h1>
+  </header>
+  <main>
+    <section id="business-list"></section>
+    <section id="add-business">
+      <h2>Cadastre sua Empresa</h2>
+      <form id="business-form">
+        <input type="text" id="name" placeholder="Nome da Empresa" required>
+        <input type="text" id="address" placeholder="Endereço" required>
+        <input type="text" id="whatsapp" placeholder="Número do WhatsApp" required>
+        <div class="file-input">
+          <input type="file" id="photo" accept="image/*" required>
+          <span class="file-input-icon">📷</span>
+          <span class="file-input-label">Escolha uma foto</span>
+        </div>
+        <button type="submit">Cadastrar</button>
+      </form>
+    </section>
+  </main>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
